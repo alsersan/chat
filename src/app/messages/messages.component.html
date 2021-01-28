@@ -1,4 +1,12 @@
-<p>{{ message }}</p>
+<ng-container *ngFor="let message of messages; let i = index">
+  <p
+    [ngClass]="{
+      right: i % 2 != 0
+    }"
+  >
+    {{ message }}
+  </p>
+</ng-container>
 <div class="flex-wrapper">
   <input #test />
   <button [attr.dataIndex]="1" (click)="updateMessage(test.value)">Send</button>

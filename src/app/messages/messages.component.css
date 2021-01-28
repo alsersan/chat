@@ -20,6 +20,14 @@ p {
   font-size: 2rem;
 }
 
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
 input {
   color: var(--text-color);
   border-radius: 50px;

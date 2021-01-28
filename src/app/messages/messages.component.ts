@@ -6,12 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./messages.component.css'],
 })
 export class MessagesComponent implements OnInit {
-  public message: string;
+  public messages = [];
 
   constructor() {}
 
   public updateMessage(value) {
-    this.message = value;
+    this.messages.push(value);
+    console.log(this.messages);
   }
 
   ngOnInit(): void {}
