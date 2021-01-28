@@ -1,0 +1,5 @@
+<p>{{ message }}</p>
+<div class="flex-wrapper">
+  <input #test />
+  <button [attr.dataIndex]="1" (click)="updateMessage(test.value)">Send</button>
+</div>
