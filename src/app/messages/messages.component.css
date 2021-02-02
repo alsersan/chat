@@ -1,19 +1,9 @@
 :host {
-  --background-color: #128c7e;
-  --button-background: #075e54;
-  --text-color: #fff;
-}
-
-.flex-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4rem;
-  background-color: var(--background-color);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding: 1rem;
 }
 
 p {
@@ -26,27 +16,4 @@ p {
 
 .right {
   text-align: right;
-}
-
-input {
-  color: var(--text-color);
-  border-radius: 50px;
-  border: none;
-  height: 2rem;
-  width: 20rem;
-  padding: 0 1rem;
-  margin-right: 1rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  outline: none;
-}
-
-button {
-  color: var(--text-color);
-  height: 2rem;
-  width: 5rem;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: var(--button-background);
-  outline: none;
 }
