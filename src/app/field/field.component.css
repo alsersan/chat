@@ -22,7 +22,7 @@ input {
   outline: none;
 }
 
-button {
+/* button {
   color: var(--text-color);
   height: 2rem;
   width: 5rem;
@@ -31,4 +31,4 @@ button {
   cursor: pointer;
   background-color: var(--button-background);
   outline: none;
-}
+} */

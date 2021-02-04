@@ -1,2 +1,8 @@
+<div class="flex-wrapper">
+  <div class="user" *ngFor="let user of users">
+    <img class="user-avatar" src="{{ user.picture.medium }}" />
+    <p>{{ user.name.first }}</p>
+  </div>
+</div>
 <app-messages [messages]="messages"></app-messages>
 <app-field buttonLabel="Send" (actionClicked)="getMessage($event)"></app-field>

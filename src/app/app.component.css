@@ -4,3 +4,18 @@
   display: flex;
   flex-direction: column;
 }
+
+.flex-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.user {
+  text-align: center;
+  font-weight: 600;
+}
+
+.user-avatar {
+  border-radius: 50%;
+}
