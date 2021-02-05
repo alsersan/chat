@@ -7,14 +7,9 @@ import { UsersService } from './users.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  public messages = [];
   public users = [];
 
   constructor(private userService: UsersService) {}
-
-  public getMessage(message: string) {
-    this.messages.push(message);
-  }
 
   public ngOnInit(): void {
     this.userService

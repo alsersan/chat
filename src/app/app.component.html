@@ -4,5 +4,4 @@
     <p>{{ user.name.first }}</p>
   </div>
 </div>
-<app-messages [messages]="messages"></app-messages>
-<app-field buttonLabel="Send" (actionClicked)="getMessage($event)"></app-field>
+<router-outlet></router-outlet>
