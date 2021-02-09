@@ -1,1 +1,3 @@
-<p>home works!</p>
+<div (click)="selectUser(user)" class="user-item" *ngFor="let user of users">
+  <p>{{ user.name.first }}</p>
+</div>
