@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactsComponent } from './contacts/contacts.component';
 import { HomeComponent } from './home/home.component';
+import { NewComponent } from './new/new.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'contacts/:user',
     component: ContactsComponent,
+  },
+  {
+    path: 'new',
+    component: NewComponent,
   },
   {
     path: '**',

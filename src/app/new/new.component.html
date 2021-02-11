@@ -1,0 +1,23 @@
+<form #userForm="ngForm">
+  <input
+    name="name"
+    #name="ngModel"
+    required
+    placeholder="Name"
+    [(ngModel)]="user.name"
+  />
+  <input
+    name="email"
+    #email="ngModel"
+    required
+    type="email"
+    placeholder="Email"
+    [(ngModel)]="user.email"
+  />
+</form>
+
+<p *ngIf="name.invalid">The name is required</p>
+<p *ngIf="email.invalid">The email is required</p>
+
+<button (click)="onSubmit()">Submit</button>
+<button (click)="userForm.reset()">Reset</button>

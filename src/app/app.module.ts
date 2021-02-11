@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { NewComponent } from './new/new.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ContactsComponent } from './contacts/contacts.component';
     MimimiPipe,
     HomeComponent,
     ContactsComponent,
+    NewComponent,
   ],
   imports: [
     BrowserModule,
