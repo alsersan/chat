@@ -7,14 +7,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MessagesComponent } from './messages/messages.component';
 import { FieldComponent } from './field/field.component';
-import { MimimiPipe } from './mimimi.pipe';
+import { MimimiPipe } from './shared/pipes/mimimi.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
-  declarations: [AppComponent, MessagesComponent, FieldComponent, MimimiPipe, HomeComponent, ContactsComponent],
+  declarations: [
+    AppComponent,
+    MessagesComponent,
+    FieldComponent,
+    MimimiPipe,
+    HomeComponent,
+    ContactsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
