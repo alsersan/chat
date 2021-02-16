@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { UsersService } from 'src/app/shared/services/users/users.service';
 
 @Component({
   selector: 'app-contacts',
@@ -10,7 +11,11 @@ export class ContactsComponent implements OnInit {
   public messages = [];
   public name: string;
 
-  constructor(private activatedRoute: ActivatedRoute) {}
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private usersService: UsersService,
+    private router: Router
+  ) {}
 
   public getMessage(message: string) {
     this.messages.push(message);
@@ -18,5 +23,9 @@ export class ContactsComponent implements OnInit {
 
   public ngOnInit(): void {
     this.name = this.activatedRoute.snapshot.params.user;
+  }
+
+  public editUser(): void {
+    this.router.navigate(['edit', this.usersService.activeUser.name.first]);
   }
 }
